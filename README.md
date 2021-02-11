@@ -5,7 +5,7 @@ Esta versão para navegadores reaproveita a regra dos movimentos utilizando-se d
 
 Atualmente o movimento é feito com as setas do teclado, posteriormente em uma versão futura pretende-se implementar o movimento por comandos lógicos assim como no original.
 
-Link para jogar: [Labirinto Sequencial](labirinto-sequencial-psi.vercel.app/index.html)
+Link para jogar: [Labirinto Sequencial](https://labirinto-sequencial.gjoliveira.vercel.app/)
 
 ***
 
