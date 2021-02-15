@@ -1127,6 +1127,27 @@ class Jogo extends Phaser.Scene {
         // Bloco lilás 01
         this.blocoLilas01 = this.blocosLilas.create(100, 357, `blocoLilasV`);
 
+        // Bloco lilás 02
+        this.blocoLilas02 = this.blocosLilas.create(800, 257, `blocoLilasV`);
+
+        if (this.pt.checked && this.dalt.checked) {
+
+            // Bloco lilás01 do modo daltônico
+            this.blocoLilas01 = this.blocosLilas.create(100, 357, `blocoLilasVD`);
+
+            // Bloco lilás02 do modo daltônico
+            this.blocoLilas02 = this.blocosLilas.create(800, 257, `blocoLilasVD`);
+
+        } else if (this.en.checked && this.dalt.checked) {
+
+            // Bloco lilás01 do modo daltônico em inglês
+            this.blocoLilas01 = this.blocosLilas.create(100, 357, `blocoLilasVDE`);
+
+            // Bloco lilás02 do modo daltônico em inglês
+            this.blocoLilas02 = this.blocosLilas.create(800, 257, `blocoLilasVDE`);
+
+        }
+
         // Colisão com o bloco lilás 01
         this.physics.add.collider(this.jogador, this.blocoLilas01, () => {
 
@@ -1137,9 +1158,6 @@ class Jogo extends Phaser.Scene {
             }, 450);
 
         });
-
-        // Bloco lilás 02
-        this.blocoLilas02 = this.blocosLilas.create(800, 257, `blocoLilasV`);
 
         // Colisão com bloco lilás 02
         this.physics.add.collider(this.jogador, this.blocoLilas02, () => {

@@ -5,7 +5,7 @@ import {Fim} from '../assets/telas/fim.js';
 
 /**
  * Lista do que ainda tem que fazer:
- * toDo versão em inglês.
+ * toDo movimentos por comandos lógicos
  */
 
 const configuracoes = {
@@ -19,9 +19,9 @@ const configuracoes = {
     state: {},
     physics: {
         default: `arcade`,
-        /*arcade: {
-            debug: true
-        }*/
+        arcade: {
+            debug: false
+        }
     },
     scene: [
         Iniciar,
