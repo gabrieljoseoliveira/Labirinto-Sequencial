@@ -4,10 +4,8 @@ import {Ganhou} from '../assets/telas/ganhou.js';
 import {Fim} from '../assets/telas/fim.js';
 
 /**
- * Inicialização e configuração do Phaser;
- * Funções para mostrar o tutorial e créditos;
- * Os botões das questões do Quiz, cuidado pois contém 
- * os spoilers das respostas corretas.
+ * Lista do que ainda tem que fazer:
+ * toDo movimentos por comandos lógicos
  */
 
 const configuracoes = {
