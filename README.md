@@ -5,7 +5,7 @@ Esta versão para navegadores reaproveita a regra dos movimentos utilizando-se d
 
 Atualmente o movimento é feito com as setas do teclado, posteriormente em uma versão futura pretende-se implementar o movimento por comandos lógicos assim como no original.
 
-Link para jogar: [Labirinto Sequencial](https://labirinto-sequencial-psi.vercel.app/)
+Link para jogar: [Labirinto Sequencial.](https://labirinto-sequencial-psi.vercel.app/)
 
 ***
 
@@ -15,4 +15,4 @@ This version for browsers reuses the rule of movements using the colors and impl
 
 Currently the movement is made with the arrow keys, later in a future version it is intended to implement the movement by logical commands as well as in the original.
 
-Link to play: [Maze of Colours](https://labirinto-sequencial-psi.vercel.app/indexE.html)
+Link to play: [Maze of Colours.](https://labirinto-sequencial-psi.vercel.app/indexE.html)
