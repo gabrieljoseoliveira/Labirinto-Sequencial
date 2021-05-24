@@ -9,7 +9,7 @@ import {Fim} from '../assets/telas/fim.js';
  */
 
 const configuracoes = {
-    renderer: Phaser.AUTO,
+    renderer: Phaser.CANVAS,
     width: 808,
     height: 616,
     antialias: true,
