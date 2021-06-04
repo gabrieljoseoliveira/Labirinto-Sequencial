@@ -1,5 +1,5 @@
 # Labirinto-Sequencial
-Esta é a versão web do [Labirinto Sequencial](http://walgprog.gp.utfpr.edu.br/assets/files/presentations/S2A1-presentation.pdf), o projeto original teve como propósito desenvolver o raciocínio lógico e trabalhar a lógica de programação de modo cooperativo, objetivando desenvolver habilidades lógicas de algoritmo.
+Esta é a versão web do [Labirinto Sequencial](https://br-ie.org/pub/index.php/wcbie/article/view/8973), o projeto original teve como propósito desenvolver o raciocínio lógico e trabalhar a lógica de programação de modo cooperativo, objetivando desenvolver habilidades lógicas de algoritmo.
 
 Esta versão para navegadores reaproveita a regra dos movimentos utilizando-se das cores e implementa mais funcionalidades que o ambiente web proporciona como contador de tempo e passos. 
 
