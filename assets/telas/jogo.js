@@ -1491,6 +1491,7 @@ class Jogo extends Phaser.Scene {
 
     criarBotaoIniciar() {
         setTimeout(() => {
+            console.log(`1`)
             this.acaoBotaoIniciar();
         }, 2750);
     }
