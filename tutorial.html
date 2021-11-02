@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Labirinto Sequencial - Tutorial</title>
+
+</head>
+
+<body>
+
+<div id="tutorial" style="visibility: visible">
+
+    <h1>Tutorial do Labirinto Sequencial</h1>
+
+    <h3>Movimentos em sequência:</h3>
+
+    <p>Use as setas do teclado para movimentar o personagem pelo labirinto obedecendo a seguinte
+        sequência de cores:
+        <span style="color: blue">Azul</span>, <span style="color: red">Vermelho</span>
+        e <span style="color: yellow">Amarelo</span>.</p>
+
+    <img src="assets/imagens/blocos/azulV.png">
+
+    <p>Se pisar errado no azul você volta para o inicio.</p>
+
+    <img src="assets/imagens/blocos/vermelhoV.png">
+
+    <p>Já o vermelho te tira um coração.</p>
+
+    <img src="assets/imagens/blocos/amareloV.png">
+
+    <p>O amarelo não vai deixar você passar se não estiver na ordem certa.</p>
+
+    <h3>Objetivos:</h3>
+
+    <img src="assets/imagens/sprites/question.png">
+
+    <p>Pegue um Q para responder uma pergunta do Quiz!
+        Se errar você perde um coração, mas você não é obrigado a responder todos, portanto
+        use seu reciocíonio para responder tudo ou deixar alguns para trás.</p>
+
+    <img style="width: 75px; height: 75px" src="assets/imagens/sprites/chave.png">
+
+    <p>As chaves vão liberando o caminho para você.</p>
+
+    <img style="width: 100px; height: 100px;" src="assets/imagens/sprites/trophy.png">
+
+    <p>Se você pegar o troféu você ganha o jogo!</p>
+
+    <h3>???</h3>
+
+    <p>Será que existe outra cor escondida por aí?</p>
+
+    <a href="index.html"><button style="border-radius: 0; border: none; background-color: Transparent;
+    background-repeat:no-repeat; border: none; overflow: hidden; outline: none;">
+        <img src="assets/imagens/okay.png"></button></a>
+
+</div>
+
+</body>
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+    * {
+        box-sizing: border-box;
+        outline: 0;
+        overflow: hidden;
+        cursor: url("assets/imagens/setaRoxa.cur"), default;
+    }
+
+    body {
+        font-family: Comfortaa;
+        margin: 0;
+        padding: 0;
+        background-color: #22b14d;
+    }
+
+    canvas {
+        margin-top: 20px;
+        margin-left: 20%;
+        animation-name: anima;
+        animation-duration: 1.25s;
+    }
+
+    button {
+        border-radius: 50px;
+        cursor: url("assets/imagens/dedoRoxo.cur"), pointer;
+    }
+
+    @keyframes anima {
+        0% {
+            padding-top: 725px;
+        }
+    }
+
+    .q {
+        margin-top: 20px;
+        margin-left: 20%;
+    }
+
+    .qI {
+        padding: 10px 5px 5px 5px;
+    }
+
+    .esconder {
+        visibility: hidden;
+    }
+
+    .mostrar {
+        visibility: visible;
+    }
+
+    #opcoes {
+        animation-name: anima;
+        animation-duration: 1.25s;
+    }
+
+    #tutorial {
+        padding: 10px;
+        font-size: larger;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 25%;
+        visibility: visible;
+        text-align: center;
+        width: 50%;
+        height: 85%;
+        overflow-y: visible;
+    }
+
+    #creditos {
+        padding: 10px;
+        font-size: larger;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 25%;
+        visibility: visible;
+        text-align: center;
+        width: 50%;
+        height: 85%;
+        overflow-y: visible;
+    }
+
+</style>
+
+</html>
