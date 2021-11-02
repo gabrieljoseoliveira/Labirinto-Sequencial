@@ -14,6 +14,8 @@ class Iniciar extends Phaser.Scene {
     pt = document.querySelector(`#pt`);
     en = document.querySelector(`#en`);
 
+    volume = document.querySelector(`#volume`);
+
     html = document.documentElement;
 
     constructor() {
@@ -60,14 +62,14 @@ class Iniciar extends Phaser.Scene {
 
             this.add.image(400, 300, `fundo01`);
 
-            this.bJogar = this.add.image(400, 385, `bJogar01`);
+            this.bJogar = this.add.image(400, 350, `bJogar01`);
             this.bJogar.setInteractive();
 
             this.bJogar
 
                 .on(`pointerdown`, () => {
 
-                    this.bJogar = this.add.image(400, 385, `bJogar02`);
+                    this.bJogar = this.add.image(400, 350, `bJogar02`);
                     this.sound.play(`bSom`);
 
                     const canvas = document.querySelector(`canvas`);
@@ -94,18 +96,18 @@ class Iniciar extends Phaser.Scene {
 
                 .on(`pointerup`, () => {
 
-                    this.bJogar = this.add.image(400, 385, `bJogar01`);
+                    this.bJogar = this.add.image(400, 350, `bJogar01`);
 
                 });
 
-            this.bTutorial = this.add.image(400, 440, `bTutorial01`);
+            this.bTutorial = this.add.image(400, 405, `bTutorial01`);
             this.bTutorial.setInteractive();
 
             this.bTutorial
 
                 .on(`pointerdown`, () => {
 
-                    this.bTutorial = this.add.image(400, 440, `bTutorial02`);
+                    this.bTutorial = this.add.image(400, 405, `bTutorial02`);
                     this.sound.play(`bSom`);
                     this.esconderJogo(`tutorial`);
 
@@ -113,18 +115,18 @@ class Iniciar extends Phaser.Scene {
 
                 .on(`pointerup`, () => {
 
-                    this.bTutorial = this.add.image(400, 440, `bTutorial01`);
+                    this.bTutorial = this.add.image(400, 405, `bTutorial01`);
 
                 });
 
-            this.bCreditos = this.add.image(400, 495, `bCreditos01`);
+            this.bCreditos = this.add.image(400, 460, `bCreditos01`);
             this.bCreditos.setInteractive();
 
             this.bCreditos
 
                 .on(`pointerdown`, () => {
 
-                    this.bCreditos = this.add.image(400, 495, `bCreditos02`);
+                    this.bCreditos = this.add.image(400, 460, `bCreditos02`);
                     this.sound.play(`bSom`);
                     this.esconderJogo(`creditos`);
 
@@ -132,7 +134,7 @@ class Iniciar extends Phaser.Scene {
 
                 .on(`pointerup`, () => {
 
-                    this.bCreditos = this.add.image(400, 495, `bCreditos01`);
+                    this.bCreditos = this.add.image(400, 460, `bCreditos01`);
 
                 });
 
@@ -140,14 +142,14 @@ class Iniciar extends Phaser.Scene {
 
             this.add.image(400, 300, `fundo01E`);
 
-            this.bJogar = this.add.image(400, 385, `bJogar01E`);
+            this.bJogar = this.add.image(400, 350, `bJogar01E`);
             this.bJogar.setInteractive();
 
             this.bJogar
 
                 .on(`pointerdown`, () => {
 
-                    this.bJogar = this.add.image(400, 385, `bJogar02E`);
+                    this.bJogar = this.add.image(400, 350, `bJogar02E`);
                     this.sound.play(`bSom`);
 
                     const canvas = document.querySelector(`canvas`);
@@ -174,18 +176,18 @@ class Iniciar extends Phaser.Scene {
 
                 .on(`pointerup`, () => {
 
-                    this.bJogar = this.add.image(400, 385, `bJogar01E`);
+                    this.bJogar = this.add.image(400, 350, `bJogar01E`);
 
                 });
 
-            this.bTutorial = this.add.image(400, 440, `bTutorial01E`);
+            this.bTutorial = this.add.image(400, 405, `bTutorial01E`);
             this.bTutorial.setInteractive();
 
             this.bTutorial
 
                 .on(`pointerdown`, () => {
 
-                    this.bTutorial = this.add.image(400, 440, `bTutorial02E`);
+                    this.bTutorial = this.add.image(400, 405, `bTutorial02E`);
                     this.sound.play(`bSom`);
                     this.esconderJogo(`tutorial`);
 
@@ -193,18 +195,18 @@ class Iniciar extends Phaser.Scene {
 
                 .on(`pointerup`, () => {
 
-                    this.bTutorial = this.add.image(400, 440, `bTutorial01E`);
+                    this.bTutorial = this.add.image(400, 405, `bTutorial01E`);
 
                 });
 
-            this.bCreditos = this.add.image(400, 495, `bCreditos01E`);
+            this.bCreditos = this.add.image(400, 460, `bCreditos01E`);
             this.bCreditos.setInteractive();
 
             this.bCreditos
 
                 .on(`pointerdown`, () => {
 
-                    this.bCreditos = this.add.image(400, 495, `bCreditos02E`);
+                    this.bCreditos = this.add.image(400, 460, `bCreditos02E`);
                     this.sound.play(`bSom`);
                     this.esconderJogo(`creditos`);
 
@@ -212,7 +214,7 @@ class Iniciar extends Phaser.Scene {
 
                 .on(`pointerup`, () => {
 
-                    this.bCreditos = this.add.image(400, 495, `bCreditos01E`);
+                    this.bCreditos = this.add.image(400, 460, `bCreditos01E`);
 
                 });
 
@@ -233,6 +235,8 @@ class Iniciar extends Phaser.Scene {
             this.musicaTitulo.play();
 
         }
+
+        this.game.sound.setVolume(this.volume.value/100);
 
     }
 

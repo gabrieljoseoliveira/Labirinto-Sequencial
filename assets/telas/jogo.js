@@ -1490,57 +1490,9 @@ class Jogo extends Phaser.Scene {
     }
 
     criarBotaoIniciar() {
-
-        if (this.pt.checked) {
-
-            // Botão de iniciar o jogo
-            this.bIniciar = this.add.image(46, 66, `bIniciar01`).setScale(0.45, 0.65);
-            this.bIniciar.setInteractive();
-
-            // Ação de clikar no botão de iniciar
-            this.bIniciar.on(`pointerdown`, () => {
-
-                this.bIniciar = this.add.image(46, 66, `bIniciar02`).setScale(0.45, 0.65);
-                this.sound.play(`bSom`);
-
-                setTimeout(() => {
-
-                    this.acaoBotaoIniciar();
-
-                }, 450);
-
-            }).on(`pointerup`, () => {
-
-                this.bVoltar = this.add.image(46, 66, `bIniciar01`).setScale(0.45, 0.65);
-
-            });
-
-        } else if (this.en.checked) {
-
-            // Botão de iniciar o jogo em inglês
-            this.bIniciar = this.add.image(46, 66, `bIniciar01E`).setScale(0.45, 0.65);
-            this.bIniciar.setInteractive();
-
-            // Ação de clikar no botão de iniciar em inglês
-            this.bIniciar.on(`pointerdown`, () => {
-
-                this.bIniciar = this.add.image(46, 66, `bIniciar02E`).setScale(0.45, 0.65);
-                this.sound.play(`bSom`);
-
-                setTimeout(() => {
-
-                    this.acaoBotaoIniciar();
-
-                }, 450);
-
-            }).on(`pointerup`, () => {
-
-                this.bVoltar = this.add.image(46, 66, `bIniciar01E`).setScale(0.45, 0.65);
-
-            });
-
-        }
-
+        setTimeout(() => {
+            this.acaoBotaoIniciar();
+        }, 2750);
     }
 
     acaoBotaoIniciar() {
@@ -1702,13 +1654,13 @@ class Jogo extends Phaser.Scene {
         if (this.pt.checked) {
 
             // Botão de reiniciar o jogo
-            this.bReiniciar = this.add.image(46, 102, `bReiniciar01`).setScale(0.45, 0.65);
+            this.bReiniciar = this.add.image(46, 72, `bReiniciar01`).setScale(0.45, 0.65);
             this.bReiniciar.setInteractive();
 
             // Ação de clikar no botão de reiniciar o jogo
             this.bReiniciar.on(`pointerdown`, () => {
 
-                this.bReiniciar = this.add.image(46, 102, `bReiniciar02`).setScale(0.45, 0.65);
+                this.bReiniciar = this.add.image(46, 72, `bReiniciar02`).setScale(0.45, 0.65);
                 this.sound.play(`bSom`);
 
                 setTimeout(() => {
@@ -1719,20 +1671,20 @@ class Jogo extends Phaser.Scene {
 
             }).on(`pointerup`, () => {
 
-                this.bReiniciar = this.add.image(46, 102, `bReiniciar01`).setScale(0.45, 0.65);
+                this.bReiniciar = this.add.image(46, 72, `bReiniciar01`).setScale(0.45, 0.65);
 
             });
 
         } else if (this.en.checked) {
 
             // Botão de reiniciar o jogo em inglês
-            this.bReiniciar = this.add.image(46, 102, `bReiniciar01E`).setScale(0.45, 0.65);
+            this.bReiniciar = this.add.image(46, 72, `bReiniciar01E`).setScale(0.45, 0.65);
             this.bReiniciar.setInteractive();
 
             // Ação de clikar no botão de reiniciar o jogo
             this.bReiniciar.on(`pointerdown`, () => {
 
-                this.bReiniciar = this.add.image(46, 102, `bReiniciar02E`).setScale(0.45, 0.65);
+                this.bReiniciar = this.add.image(46, 72, `bReiniciar02E`).setScale(0.45, 0.65);
                 this.sound.play(`bSom`);
 
                 setTimeout(() => {
@@ -1743,7 +1695,7 @@ class Jogo extends Phaser.Scene {
 
             }).on(`pointerup`, () => {
 
-                this.bReiniciar = this.add.image(46, 102, `bReiniciar01E`).setScale(0.45, 0.65);
+                this.bReiniciar = this.add.image(46, 72, `bReiniciar01E`).setScale(0.45, 0.65);
 
             });
 
