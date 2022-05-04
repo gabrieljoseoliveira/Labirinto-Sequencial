@@ -15,8 +15,7 @@ class Jogo extends Phaser.Scene {
     dalt = document.querySelector(`#dalt`);
 
     // Tela do jogo
-    //canvas = document.querySelector(`canvas`);
-    canvas = document.querySelector(`#telinha`);
+    canvas = document.querySelector(`canvas`);
 
     // Crônometro
     contaTempo = new Tempo();
